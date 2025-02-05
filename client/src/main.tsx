@@ -10,7 +10,7 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/share" element={<SharePage />} />
+        <Route path="/share/:shortId" element={<SharePage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

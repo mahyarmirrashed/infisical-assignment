@@ -5,5 +5,5 @@ install:
 up:
   docker compose -f compose.dev.yaml up --build
 
-down:
-  docker compose -f compose.dev.yaml down
+down *args:
+  docker compose -f compose.dev.yaml down {{args}}
